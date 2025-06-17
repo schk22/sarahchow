@@ -1,0 +1,176 @@
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+  overflow-y: scroll;
+  font-size: 1.15em;
+}
+.limiter, main {
+  max-width: 640px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  color: #000;
+}
+p {
+  text-align: justify;
+}
+blockquote {
+  font-style: italic;
+}
+.subtitle {
+  font-weight: normal;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h1 small {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: block;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+h1, h2, h3, .label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  line-height: 1.25;
+  border-bottom: 1px solid;
+  margin-bottom: 0;
+}
+h1::before {
+  content: "✱ ";
+  margin-bottom: 0.5rem;
+}
+p:has(small) {
+  margin-top: 0;
+}
+code {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  overflow: auto;
+}
+.books {
+  display: grid;
+  grid-row-gap: 5px;
+  grid-template-columns: 1fr 0.45fr min-content;
+  margin-bottom: 16px;
+}
+.books > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.books time {
+    padding-right: 0.25em;
+    font-variant-numeric: tabular-nums;
+    white-space: pre;
+}
+.books a, .writing a {
+  font-weight: 500;
+}
+hr {
+  height: 1px;
+  background: #000;
+  border: 0;
+}
+.natural-language {
+  display: none;
+}
+.label {
+  border-bottom: 1px solid;
+  font-weight: bold;
+}
+[title] {
+  border-bottom: 1px dotted;
+}
+img {
+  border-radius: 5px;
+}
+.inline-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.inline-image img {
+  max-width: 175px;
+  height: 175px;
+  margin-top: 20px;
+}
+.inline-image p {
+  flex-grow: 1;
+  margin-top: 15px;
+}
+@media screen and (prefers-color-scheme: dark) {
+  a {
+    color: #fff;
+  }
+  hr {
+    background: #fff;
+  }
+}
+@media screen and (min-width:1100px) {
+  nav {
+    position: absolute;
+    right: 50%;
+    margin-right: 340px !important;
+  }
+  nav hr {
+    display: none;
+  }
+  hr {
+    background #000;
+  }
+  .inline-image {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width:700px) {
+  .limiter, main {
+      width: auto;
+      padding: 0;
+  }
+  body {
+      padding: 0;
+  }
+  hr {
+      margin-top: 0;
+  }
+  .books {
+      grid-template-columns: 1fr;
+      grid-row-gap: 0;
+      margin-bottom: 0;
+  }
+  .books div {
+      white-space: normal;
+  }
+  .books .title:not(:nth-of-type(4)) {
+      padding-top: 16px;
+  }
+  .books time {
+      padding-bottom: 16px;
+  }
+  .books time:not(:last-of-type) {
+      border-bottom: 1px solid;
+  }
+  .iso-8601 {
+      display: none;
+  }
+  .natural-language {
+      display: grid;
+  }
+  .title {
+      font-style: italic;
+  }
+  .label {
+      display: none;
+  }
+  .author:before {
+      content: "by ";
+  }
+}
+</style>
