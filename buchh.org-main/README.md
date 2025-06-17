@@ -1,6 +1,6 @@
-# [buchh.org](https://buchh.org)
+# [sarahchow.org](https://sarahchow.org)
 
-My [personal website](https://buchh.org) published with [GitHub Pages](https://pages.github.com/).
+My [personal website](https://sarahchow.org) published with [GitHub Pages](https://pages.github.com/).
 
 ## Why [Hugo](https://gohugo.io)?
 
