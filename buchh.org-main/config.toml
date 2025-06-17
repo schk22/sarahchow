@@ -1,5 +1,0 @@
-baseURL = 'https://buchh.org'
-enableGitInfo = true
-
-[markup.goldmark.renderer]
-  unsafe = true
