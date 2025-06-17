@@ -2,5 +2,5 @@
 
 My [personal website](https://sarahchow.org) published with [GitHub Pages](https://pages.github.com/). 
 
-Original code taken sourced from [buchh.org](https://github.com/JonathanBuchh/buchh.org) (thank you Jonathan!) 
+Original code sourced from [buchh.org](https://github.com/JonathanBuchh/buchh.org) (thank you Jonathan!) 
 
