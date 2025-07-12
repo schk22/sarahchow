@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {
+  text-decoration: none;
+  color: navy;
+}
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+body {
+  font-family: Cambria, sans-serif;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+h1 {text-align: center;}
+h2 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+div {
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+</style>
+</head>
+<body>
+
+
+<h1>周</h1>
+<p>Sarah Chow</p>
+
+<div class="center">
+
+<h3><a href="www.sarahchow.org/about">about</a></h3>
+<p> ꩜  </p>
+<h3><a href="www.sarahchow.org/work">work</a></h3>
+<p> ꩜  </p>
+<h3><a href="www.sarahchow.org/contact">contact</a></h3>
+
+
+
+</div>
+
+</body>
+</html>
+
+
