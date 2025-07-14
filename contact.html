@@ -48,28 +48,50 @@
     h1, h2, p {
       text-align: center;
     }
+
+    .hidden-frame {
+      display: none;
+    }
+
+    .message {
+      color: crimson;
+      margin-top: 20px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
-<h2><a href="https://sarahchow.org" class="no-style-link" target="_blank" rel="noopener noreferrer">Contact</a></h2>
-
+  <h2><a href="https://sarahchow.org" class="no-style-link" target="_blank" rel="noopener noreferrer">Contact</a></h2>
 
   <div class="center">
+    <form id="contact-form" target="hidden_iframe" onsubmit="showMessage();">
+      <label for="name">Name:</label><br>
+      <textarea name="entry.27118757" rows="1" cols="34" required></textarea><br><br>
 
+      <label for="email">Email:</label><br>
+      <textarea name="entry.1236127516" rows="1" cols="34" required></textarea><br><br>
 
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSfMyNlz-4S0DGwoZyBYTxk05FVXPJvgsHy8ifZSorZyi9pjIg/formResponse" method="POST" target="_blank">
-   <label for="name">Name:</label><br>
-  <textarea name="entry.27118757" rows="1" cols="34"></textarea><br><br>
+      <label for="message">Message:</label><br>
+      <textarea name="entry.1828011495" rows="10" cols="34" required></textarea><br><br>
 
-  <label for="email">Email:</label><br>
-  <textarea name="entry.1236127516" rows="1" cols="34"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
 
-  <label for="message">Message:</label><br>
-  <textarea name="entry.1828011495" rows="10" cols="34"></textarea><br><br>
-
-  <input type="submit" value="Submit">
-      </form>
+    <iframe name="hidden_iframe" class="hidden-frame"></iframe>
+    <div id="thank-you" class="message" style="display: none;">Submitted! I’ll get back to you as soon as possible.</div>
   </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('thank-you').style.display = 'block';
+      setTimeout(() => {
+        document.getElementById('contact-form').reset();
+      }, 500);
+    }
+
+    document.getElementById('contact-form').action = "https://docs.google.com/forms/d/e/1FAIpQLSfMyNlz-4S0DGwoZyBYTxk05FVXPJvgsHy8ifZSorZyi9pjIg/formResponse";
+    document.getElementById('contact-form').method = "POST";
+  </script>
 </body>
 </html>
